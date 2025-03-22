@@ -6,7 +6,7 @@ public class AfricanParrot extends Parrot {
     }
 
     public String getCry() {
-        return switch (type) {
+        return switch (ParrotTypeEnum.AFRICAN) {
             case EUROPEAN -> "Sqoork!";
             case AFRICAN -> "Sqaark!";
             case NORWEGIAN_BLUE -> voltage > 0 ? "Bzzzzzz" : "...";
@@ -14,7 +14,7 @@ public class AfricanParrot extends Parrot {
     }
 
     public double getSpeed() {
-        return switch (type) {
+        return switch (ParrotTypeEnum.AFRICAN) {
             case EUROPEAN -> getBaseSpeed();
             case AFRICAN -> Math.max(0, getBaseSpeed() - getLoadFactor() * numberOfCoconuts);
             case NORWEGIAN_BLUE -> (isNailed) ? 0 : getBaseSpeed(voltage);
