@@ -15,7 +15,11 @@ public class Parrot {
     }
 
     public static Parrot create(ParrotTypeEnum type, int numberOfCoconuts, double voltage, boolean isNailed) {
-        return new Parrot(type, numberOfCoconuts, voltage, isNailed);
+        return switch (type) {
+            case EUROPEAN -> new Parrot(type, numberOfCoconuts, voltage, isNailed);
+            case AFRICAN -> new Parrot(type, numberOfCoconuts, voltage, isNailed);
+            case NORWEGIAN_BLUE -> new Parrot(type, numberOfCoconuts, voltage, isNailed);
+        };
     }
 
     private double getBaseSpeed(double voltage) {
