@@ -2,11 +2,9 @@ package parrot;
 
 public class AfricanParrot implements Parrot {
     protected final int numberOfCoconuts;
-    protected final boolean isNailed;
 
-    public AfricanParrot(int numberOfCoconuts, boolean isNailed) {
+    public AfricanParrot(int numberOfCoconuts) {
         this.numberOfCoconuts = numberOfCoconuts;
-        this.isNailed = isNailed;
     }
 
     public String getCry() {
