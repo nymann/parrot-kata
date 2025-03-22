@@ -16,10 +16,7 @@ public class EuropeanParrot implements Parrot {
     }
 
     public double getSpeed() {
-        return getBaseSpeed();
-    }
-
-    double getBaseSpeed() {
         return 12.0;
     }
+
 }
