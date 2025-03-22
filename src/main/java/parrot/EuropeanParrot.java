@@ -1,6 +1,6 @@
 package parrot;
 
-public class EuropeanParrot extends Parrot {
+public class EuropeanParrot implements Parrot {
     protected final int numberOfCoconuts;
     protected final double voltage;
     protected final boolean isNailed;
