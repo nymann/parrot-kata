@@ -1,8 +1,14 @@
 package parrot;
 
 public class EuropeanParrot extends Parrot {
+    protected final int numberOfCoconuts;
+    protected final double voltage;
+    protected final boolean isNailed;
+
     public EuropeanParrot(int numberOfCoconuts, double voltage, boolean isNailed) {
-        super(ParrotTypeEnum.EUROPEAN, numberOfCoconuts, voltage, isNailed);
+        this.numberOfCoconuts = numberOfCoconuts;
+        this.voltage = voltage;
+        this.isNailed = isNailed;
     }
 
     public String getCry() {
