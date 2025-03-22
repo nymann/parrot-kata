@@ -22,18 +22,6 @@ public abstract class Parrot {
         };
     }
 
-    double getBaseSpeed(double voltage) {
-        return Math.min(24.0, voltage * getBaseSpeed());
-    }
-
-    double getLoadFactor() {
-        return 9.0;
-    }
-
-    double getBaseSpeed() {
-        return 12.0;
-    }
-
     public abstract double getSpeed();
     public abstract String getCry();
 
