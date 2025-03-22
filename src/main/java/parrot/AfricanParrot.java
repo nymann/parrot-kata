@@ -2,12 +2,10 @@ package parrot;
 
 public class AfricanParrot implements Parrot {
     protected final int numberOfCoconuts;
-    protected final double voltage;
     protected final boolean isNailed;
 
-    public AfricanParrot(int numberOfCoconuts, double voltage, boolean isNailed) {
+    public AfricanParrot(int numberOfCoconuts, boolean isNailed) {
         this.numberOfCoconuts = numberOfCoconuts;
-        this.voltage = voltage;
         this.isNailed = isNailed;
     }
 
